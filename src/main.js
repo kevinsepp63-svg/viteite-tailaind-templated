@@ -1,4 +1,4 @@
-const app = document.querySelector('#app')
+const app = document.querySelector("#app");
 
 if (app) {
   app.innerHTML = `
@@ -6,6 +6,5 @@ if (app) {
       <h1>Tere Tulemast Vite'i!</h1>
       <p>See on Vite projekti algus.</p>
     </main>
-  `
+  `;
 }
-
