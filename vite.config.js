@@ -1,23 +1,23 @@
-const path = require("path");
-const { defineConfig } = require("vite");
+const path = require('path');
+const { defineConfig } = require('vite');
 
 module.exports = defineConfig({
   root: __dirname,
-  base: "/",
+  base: '/',
   server: {
     port: 4173,
     open: true,
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   build: {
-    outDir: "dist",
+    outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
-      input: path.resolve(__dirname, "index.html"),
+      input: path.resolve(__dirname, 'index.html'),
     },
   },
 });
